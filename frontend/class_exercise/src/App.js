@@ -91,6 +91,10 @@ const authors = [
 //const [books, setBooks] = useState([]),
 useEffect(() => {getBooks()}, [])
 
+/***************************************/
+/******** FUNCTION GET BOOKS ***********/
+/***************************************/
+
 function getBooks() {
 //apiConn.get('/books')
  // .then(response => {

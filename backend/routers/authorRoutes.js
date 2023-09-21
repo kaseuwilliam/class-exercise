@@ -15,3 +15,16 @@ DELETE /authors/:id: Delete a specific author by ID.
  
 
 */
+
+const express = require("express")
+const router = express.Router()
+
+const authorController = require("../controllers/authorsController")
+
+router.get('/', authorController.getAllAuthors)
+router.get('/:id', authorController.getAuthorByID)
+router.post('/', authorController.addAuthor)
+router.put('/:id', authorController.editAuthor)
+router.delete('/:id', authorController.deleteAuthor)
+
+module.exports = router
